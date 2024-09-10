@@ -1,0 +1,18 @@
+nav {
+    height: calc(var(--header-height) + 1.5rem) !important;
+
+    .navbar-brand {
+        font-size: var(--normal-font-size) !important;
+        font-weight: var(--font-medium) !important;
+    }
+
+    .collapse {
+        font-family: var(--body-font) !important;
+        color: var(--title-color) !important;
+        font-size: var(--small-font-size) !important;
+        font-weight: var(--font-normal) !important;
+
+
+    }
+}
+
