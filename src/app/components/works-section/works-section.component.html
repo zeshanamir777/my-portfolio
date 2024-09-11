@@ -1,60 +1,134 @@
 <section class="work section" id="portfolio">
-    <h2 class="section__title">Recent Works</h2><span class="section__subtitle">My Portfolio</span>
+    <h2 class="section__title">Recent Works</h2>
+    <span class="section__subtitle">My Portfolio</span>
 
-    <div class="work__container container grid">
-        <div class="work__card" style="opacity: 1;">
-            <img src="../../../assets/Pictures/DeWatermark.ai_1725739156930-removebg-preview.png" alt=""
+    <!-- Filters for Technology -->
+    <div class="work__filters">
+        <span class="work__item" [ngClass]="{'active-work': activeFilter === 'angular'}"
+            (click)="setActiveFilter('angular')">Angular</span>
+
+        <span class="work__item" [ngClass]="{'active-work': activeFilter === 'net'}"
+            (click)="setActiveFilter('net')">.Net Framework</span>
+
+        <span class="work__item" [ngClass]="{'active-work': activeFilter === 'javascript'}"
+            (click)="setActiveFilter('javascript')">Javascript</span>
+    </div>
+
+    <!-- Angular Section -->
+    <div class="work__container container grid" *ngIf="activeFilter === 'angular'">
+        <div class="work__card">
+            <img src="../../../assets/works/sanofi.png" alt=""
                 class="work__img">
-            <h3 class="work__title">The Cloud City Metaverse</h3>
-            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
-        </div>
-        <div class="work__card" style="opacity: 1;">
-            <img src="../../../assets/Pictures/DeWatermark.ai_1725739156930-removebg-preview.png" alt=""
-                class="work__img">
-            <h3 class="work__title">The Cloud City Metaverse</h3>
-            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
-        </div>
-        <div class="work__card" style="opacity: 1;">
-            <img src="../../../assets/Pictures/DeWatermark.ai_1725739156930-removebg-preview.png" alt=""
-                class="work__img">
-            <h3 class="work__title">The Cloud City Metaverse</h3>
-            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
-        </div>
-        <div class="work__card" style="opacity: 1;">
-            <img src="../../../assets/Pictures/DeWatermark.ai_1725739156930-removebg-preview.png" alt=""
-                class="work__img">
-            <h3 class="work__title">The Cloud City Metaverse</h3>
+            <h3 class="work__title">Sanofi</h3>
             <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
         </div>
 
-      
+        <div class="work__card">
+            <img src="../../../assets/works/hrms.png" alt=""
+                class="work__img">
+            <h3 class="work__title">HRMS</h3>
+            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
+        </div>
+
+        <div class="work__card">
+            <img src="../../../assets/works/ajmn playstore.png" alt=""
+                class="work__img">
+            <h3 class="work__title">AJMN Playstore</h3>
+            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
+        </div>
+
+        <!-- <div class="work__card">
+            <img src="../../../assets/Pictures/DeWatermark.ai_1725739156930-removebg-preview.png" alt=""
+                class="work__img">
+            <h3 class="work__title">AJMN Chat AI App</h3>
+            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
+        </div> -->
+
+        <div class="work__card">
+            <img src="../../../assets/works/news-agenda.png" alt=""
+                class="work__img">
+            <h3 class="work__title">AJMN News Agenda</h3>
+            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
+        </div>
+
+        <div class="work__card">
+            <img src="../../../assets/works/pdfflex.png" alt=""
+                class="work__img">
+            <h3 class="work__title">PDF FLEX</h3>
+            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
+        </div>
+
+        <div class="work__card">
+            <img src="../../../assets/works/belsio.png" alt=""
+                class="work__img">
+            <h3 class="work__title">Belsio Enterprise App</h3>
+            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
+        </div>
+
+        <div class="work__card">
+            <img src="../../../assets/works/faa.png" alt=""
+                class="work__img">
+            <h3 class="work__title">FAA</h3>
+            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
+        </div>
+
+        <div class="work__card">
+            <img src="../../../assets/works/iplanr.png" alt=""
+                class="work__img">
+            <h3 class="work__title">iplanr</h3>
+            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
+        </div>
+    </div>
+
+    <!-- .Net Framework Section -->
+    <div class="work__container container grid" *ngIf="activeFilter === 'net'">
+        <div class="work__card">
+            <img src="../../../assets/works/iplanr.png" alt=""
+            class="work__img">
+            <h3 class="work__title">iplanr</h3>
+            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
+        </div>
+
+        <div class="work__card">
+            <img src="../../../assets/works/hrms.png" alt=""
+            class="work__img">
+            <h3 class="work__title">HRMS</h3>
+            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
+        </div>
+    </div>
+
+    <!-- Javascript Section -->
+    <div class="work__container container grid" *ngIf="activeFilter === 'javascript'">
+        <div class="work__card">
+            <img src="../../../assets/works/naf.png" alt=""
+                class="work__img">
+            <h3 class="work__title">NAF</h3>
+            <span class="work__button" data-toggle="modal" data-target="#exampleModalCenter">Demo</span>
+        </div>
+    </div>
+</section>
 
 
-        <!-- Button trigger modal -->
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle modal-xl" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body d-flex w-100 justify-content-between">
-                        <div> 
-                            <img src="../../../assets/Pictures/DeWatermark.ai_1725739156930-removebg-preview.png"
-                                alt="" class="img-fluid mb-3">
-                        </div>
-                        <div>
-                            <p>Cloud City Metaverse involves all the upcoming updates and events of our metaverse...</p>
-                            <ul class="details__info">
-                                <li>Created - <span>4 Dec 2020</span></li>
-                                <li>Technologies - <span>HTML, CSS</span></li>
-                                <li>Role - <span>Frontend</span></li>
-                                <li>View - <span><a href="#">www.domain.com</a></span></li>
-                            </ul>
-                        </div>
-                    </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle modal-xl" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body d-flex w-100 justify-content-between">
+                <div>
+                    <img src="../../../assets/Pictures/DeWatermark.ai_1725739156930-removebg-preview.png" alt=""
+                        class="img-fluid mb-3">
+                </div>
+                <div>
+                    <p>Cloud City Metaverse involves all the upcoming updates and events of our metaverse...</p>
+                    <ul class="details__info">
+                        <li>Created - <span>4 Dec 2020</span></li>
+                        <li>Technologies - <span>HTML, CSS</span></li>
+                        <li>Role - <span>Frontend</span></li>
+                        <li>View - <span><a href="#">www.domain.com</a></span></li>
+                    </ul>
                 </div>
             </div>
         </div>
-
     </div>
-</section>
+</div>

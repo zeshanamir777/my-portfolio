@@ -64,16 +64,18 @@
 }
 .testimonial__description {
     font-size: var(--small-font-size);
+    margin-top: 10px;
 }
 .testimonial__container {
     width: 100%;
     overflow-x: auto;
     display: flex;
-    justify-content: center;
+    justify-content: start; /* Aligns cards to the start of the container */
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;      /* Firefox */
+    padding-left: 1rem; /* Add some padding to the left so the first card is fully visible */
 }
 
 .testimonial__container::-webkit-scrollbar {

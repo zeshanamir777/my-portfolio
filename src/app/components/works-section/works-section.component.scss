@@ -16,22 +16,25 @@
     cursor: pointer;
     border-radius: var(--mb-0-5);
 }
+
 .work__filters {
     display: flex;
     justify-content: center;
     align-items: center;
-    -moz-column-gap: var(--mb-0-75);
     column-gap: var(--mb-0-75);
     margin-bottom: var(--mb-2);
 }
+
 .active-work {
     background-color: var(--title-color);
     color: var(--container-color);
 }
+
 .work__card, .work__item {
     cursor: pointer;
     border-radius: var(--mb-0-5);
 }
+
 .work__container {
     grid-template-columns: repeat(3, 330px);
     gap: 1.8rem;
@@ -42,6 +45,9 @@
 .work__card {
     background-color: var(--container-color);
     padding: 1.25rem;
+    img{
+        height: 150px;
+    }
 }
 .work__card, .work__item {
     cursor: pointer;
