@@ -36,19 +36,19 @@
 body {
     background-color: #fafafa !important;
 }
-
+.section__title{
+    font-weight: 600;
+    text-align: center;
+}
 .container {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.home-section {
-    height: calc(80vh);
-}
 .section {
     padding: 6rem 0 2rem;
-    min-height: calc(100vh - 8rem); // Adjust as necessary for padding or other elements
+    // min-height: calc(100vh - 8rem); 
 }
 
 .section-footer {

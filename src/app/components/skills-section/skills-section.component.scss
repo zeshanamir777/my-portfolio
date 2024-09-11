@@ -59,3 +59,12 @@
 .skills__container{
     gap: 8px;
 }
+@media (max-width: 767.98px)  {
+.skills__container
+{
+flex-direction: column;
+}
+.skills__content{
+    width: 100%;
+}
+}

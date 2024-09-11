@@ -176,3 +176,20 @@ ul {
 .portfolio__item-details {
     padding: 1rem;
 }
+
+
+@media (max-width: 768px) {
+    .work__container[_ngcontent-ng-c968805118] {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 595px) {
+    .work__container[_ngcontent-ng-c968805118] {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 400px) {
+    .work__container[_ngcontent-ng-c968805118] {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

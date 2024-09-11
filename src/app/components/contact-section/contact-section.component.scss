@@ -116,3 +116,52 @@ a {
 .button__icon {
     margin-left: var(--mb-0-5);
 }
+@media (max-width: 767.98px)  {
+    .contact__form{
+        width: 100%;
+    }
+    .contact__container{
+        column-gap: 1rem !important;
+    }
+    .contact__content{
+        width: 50% !important;
+    }
+}
+@media (max-width: 680.98px)  {
+    .contact__container{
+        column-gap: 1rem !important;
+        flex-direction: column;
+    }
+    .contact__content{
+        margin-bottom: 1rem;
+        width: 100% !important;
+    }
+    .contact__info{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact__card {
+        width: 160px;
+    }
+    .contact__card-data {
+        display: inline-block;
+        max-width: 100%;         /* Ensures the element respects the width */
+        white-space: nowrap;      /* Prevents text from wrapping */
+        overflow: hidden;         /* Hides overflowed text */
+        text-overflow: ellipsis;  /* Adds the ellipsis at the end */
+      }
+      
+}
+
+@media (max-width: 595px)  {
+    .contact__info{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact__card {
+        width: 100%;
+    }
+}
+
